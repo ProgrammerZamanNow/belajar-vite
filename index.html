@@ -18,10 +18,15 @@
     import {sayHello} from "./say-hello.js";
     import {sayGoodbye} from "./say-goodbye.ts";
     import {v4} from "uuid";
+    import * as person from "./person.json";
 
     sayHello('Eko');
     sayGoodbye('Budi');
     console.info(v4());
+    console.info(person);
+    console.info(person.name);
+    console.info(person.web);
+    console.info(person.instagram);
 </script>
 </body>
 </html>
