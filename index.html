@@ -12,9 +12,11 @@
 <script type="module">
     import {sayHello} from "./say-hello.js";
     import {sayGoodbye} from "./say-goodbye.ts";
+    import {v4} from "uuid";
 
     sayHello('Eko');
     sayGoodbye('Budi');
+    console.info(v4());
 </script>
 </body>
 </html>
