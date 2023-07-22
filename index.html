@@ -14,11 +14,13 @@
 <body>
 <h1>Hello Vite</h1>
 <h2>Support SASS</h2>
+<img src="img.png" alt="Vite" style="height: 100px; width: auto">
 <script type="module">
     import {sayHello} from "./say-hello.js";
     import {sayGoodbye} from "./say-goodbye.ts";
     import {v4} from "uuid";
     import * as person from "./person.json";
+    import textFile from "./hello.txt?raw";
 
     sayHello('Eko');
     sayGoodbye('Budi');
@@ -27,6 +29,7 @@
     console.info(person.name);
     console.info(person.web);
     console.info(person.instagram);
+    console.info(textFile);
 </script>
 </body>
 </html>
